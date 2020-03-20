@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "dev": "nodemon -L",
+    "build": "rm -rf dist && mkdir dist && cp main.js dist/main.js && parcel build ./src/index.html --public-url ./ -d dist --no-source-maps",
+    "el": "npm run build && electron ./dist/main.js",
+    "el_build": "npm run build && cd build && cp src/package.json src/build-win.js . && npm run build && cd .."
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "parcel-bundler": "^1.12.4",
+    "electron-builder": "^22.4.1",
+    "electron": "^8.1.1",
+    "nodemon": "^2.0.2"
+  }
+}
