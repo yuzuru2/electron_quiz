@@ -1,1 +1,0 @@
-ls | grep -v -E "^node_modules|^src$|^dist" | xargs rm -rf

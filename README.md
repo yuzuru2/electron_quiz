@@ -18,5 +18,8 @@ $ npm run dev
 ## ビルド
 
 ```
-$ npm run el_build
+$ npm run build_win
 ```
+
+## 参考サイト
+https://qiita.com/saki-engineering/items/203892838e15b3dbd300
